@@ -1,5 +1,6 @@
 *, *:before, *:after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
@@ -11,7 +12,10 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
 }
 
 footer, header, nav, section, main {
@@ -31,7 +35,7 @@ blockquote, q {
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -50,22 +54,26 @@ input {
   position: relative;
   background-image: url(./images/eagle_background.jpg);
   width: 100%;
-  height: 56rem;
+  height: 100vh;
 }
+
 .container nav {
   text-align: right;
   padding: 1.5rem;
 }
+
 .container nav img {
   width: 1rem;
   height: 1rem;
 }
+
 .container nav a {
   text-decoration: none;
   color: white;
   margin: 20px;
   font-family: "Montserrat", sans-serif;
 }
+
 .container nav .home {
   position: absolute;
   width: 5rem;
@@ -73,12 +81,14 @@ input {
   font-weight: bold;
   margin: 0 auto;
 }
+
 .container .header {
   margin: 0 auto;
   width: 60%;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
+
 .container .navBottom {
   position: absolute;
   bottom: 0;
@@ -90,30 +100,39 @@ input {
 .header {
   position: relative;
 }
+
 .header h2 {
   font-family: "Kaushan Script", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   margin-bottom: 2rem;
 }
+
 .header h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 8rem;
+  font-size: 6rem;
   color: white;
   font-weight: bold;
   margin-bottom: 2rem;
 }
+
 .header .line {
   margin: 0 auto;
   border-top: 2px solid white;
   width: 5%;
   margin-bottom: 2rem;
 }
+
 .header .box {
   margin: 0 auto;
   width: 20%;
   border: 2px solid white;
   padding: 0.5rem;
+  color: white;
+}
+
+.header .box a {
+  text-decoration: none;
   color: white;
 }
 
