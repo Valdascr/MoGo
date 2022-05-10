@@ -40,7 +40,9 @@ input
 
 $font-stack: 'Montserrat', sans-serif
 $font-second: 'Kaushan Script', cursive
-
+$font-size: 2rem
+$margin-top: 5rem
+$margin-top-h2 1rem
     
 .container
     position: relative
@@ -123,10 +125,20 @@ $font-second: 'Kaushan Script', cursive
 .secondPage
     position: relative
     width: 100%
+    margin-top: $margin-top
 
     .sectionOne
-        margin: 0 auto:
         text-align: center
+
+        h1
+            font-family: $font-second
+            font-size: $font-size
+
+        h2
+            font-family: $font-stack
+            font-size: $font-size
+            font-weight: bold
+            margint-top: $margin-top-h2
 
 
 
