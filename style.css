@@ -144,7 +144,7 @@ input {
 .secondPage {
   position: relative;
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .secondPage .sectionOne {
@@ -195,24 +195,25 @@ input {
   height: 12rem;
 }
 
-.numbers .box {
-  border: 1px solid white;
+.boxNumber {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
   display: inline-block;
   height: 20vh;
-  width: 10%;
+  width: 12.5%;
   margin: 0 auto;
   border-spacing: 0;
   font-size: 1rem;
   color: white;
 }
 
-.numbers .box h1 {
+.boxNumber h1 {
   text-align: center;
   padding-top: 2rem;
   font-size: 3rem;
 }
 
-.numbers .box p {
+.boxNumber p {
   font-size: 0.60rem;
   text-align: center;
   height: 3rem;
@@ -246,5 +247,29 @@ input {
   width: 5%;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.boxContainer {
+  margin: 0 auto;
+  width: 63%;
+  border: 1px solid black;
+}
+
+.boxContainer img {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid black;
+}
+
+.boxContainer .boxTop {
+  display: inline-block;
+  width: 33.1%;
+  border: 1px solid black;
+}
+
+.boxContainer .boxBottom {
+  display: inline-block;
+  width: 33.1%;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */
