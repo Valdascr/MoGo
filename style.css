@@ -144,7 +144,6 @@ input {
 .secondPage {
   position: relative;
   width: 100%;
-  margin-top: 5rem;
 }
 
 .secondPage .sectionOne {
@@ -154,6 +153,7 @@ input {
 .secondPage .sectionOne h1 {
   font-family: "Kaushan Script", cursive;
   font-size: 2rem;
+  margin-top: 5rem;
 }
 
 .secondPage .sectionOne h2 {
@@ -167,20 +167,21 @@ input {
   margin: 0 auto;
   border-top: 2px solid #f38181;
   width: 5%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .secondPage .sectionOne p {
   width: 55%;
   margin: 0 auto;
   color: #999999;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .secondPage .images {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .secondPage .images img {
@@ -219,57 +220,215 @@ input {
   height: 3rem;
 }
 
-.thirdPage {
-  position: relative;
+section {
   width: 100%;
-  margin-top: 4rem;
 }
 
-.thirdPage .sectionOne {
+section .sectionOne {
   text-align: center;
 }
 
-.thirdPage .sectionOne h1 {
+section .sectionOne h1 {
   font-family: "Kaushan Script", cursive;
   font-size: 2rem;
+  margin-top: 5rem;
 }
 
-.thirdPage .sectionOne h2 {
+section .sectionOne h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   margin-top: 1rem;
 }
 
-.thirdPage .sectionOne .line {
+section .sectionOne .line {
   margin: 0 auto;
   border-top: 2px solid #f38181;
   width: 5%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.boxContainer {
+.sectionTwo {
   margin: 0 auto;
   width: 63%;
-  border: 1px solid black;
 }
 
-.boxContainer img {
+.sectionTwo .boxTop {
+  position: relative;
+  display: inline-block;
+  width: 32%;
+  height: 8rem;
+  border-spacing: 0;
+}
+
+.sectionTwo .boxTop img {
   width: 2rem;
   height: 2rem;
-  border: 1px solid black;
 }
 
-.boxContainer .boxTop {
-  display: inline-block;
-  width: 33.1%;
-  border: 1px solid black;
+.sectionTwo .boxTop .h1 {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  left: 20%;
 }
 
-.boxContainer .boxBottom {
+.sectionTwo .boxTop .h1 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sectionTwo .boxTop .h1 p {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+}
+
+.sectionTwo .lineThirdPage {
+  border-top: 1px solid  #999999;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.sectionTwo .boxBottom {
+  position: relative;
   display: inline-block;
-  width: 33.1%;
-  border: 1px solid black;
+  width: 32%;
+  height: 8rem;
+  border-spacing: 0;
+}
+
+.sectionTwo .boxBottom img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.sectionTwo .boxBottom .h1 {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  left: 20%;
+}
+
+.sectionTwo .boxBottom .h1 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sectionTwo .boxBottom .h1 p {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+}
+
+/*  ******************* FOUR PAGE ******************* */
+.fourPage {
+  background-image: url(./images/background.jpg);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.phone {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 57%;
+}
+
+.tablet {
+  text-align: center;
+  padding-top: 8px;
+}
+
+.sectionHeader {
+  text-align: center;
+}
+
+.sectionHeader h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
+  padding-top: 5rem;
+}
+
+.sectionHeader h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.sectionHeader .line {
+  margin: 0 auto;
+  border-top: 2px solid #f38181;
+  width: 5%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/*  ******************* FIVE PAGE ******************* */
+.fivePage {
+  width: 100%;
+}
+
+.sectionFive {
+  text-align: center;
+}
+
+.sectionFive h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
+  padding-top: 5rem;
+}
+
+.sectionFive h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.sectionFive .line {
+  margin: 0 auto;
+  border-top: 2px solid #f38181;
+  width: 5%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.sectionFive p {
+  width: 55%;
+  margin: 0 auto;
+  color: #999999;
+  margin-bottom: 5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.boxes {
+  width: 80%;
+  height: 39vh;
+  position: relative;
+  border: 1px solid red;
+}
+
+.boxes .boxLeft {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  left: 0;
+  border: 1px solid green;
+}
+
+.boxes .boxRight {
+  position: absolute;
+  height: 80px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  border: 1px solid blue;
 }
 /*# sourceMappingURL=style.css.map */

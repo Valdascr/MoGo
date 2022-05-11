@@ -1,12 +1,12 @@
 *, *:before, *:after
-    box-sizing: border-box
+    box-sizing: border-box;
 
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video
-    margin: 0
-    padding: 0
-    border: 0
-    font-size: 100%
-    font: inherit
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
     vertical-align: baseline
     text-rendering: optimizeLegibility
     -webkit-font-smoothing: antialiased
@@ -40,21 +40,41 @@ input
 
 $font-stack: 'Montserrat', sans-serif
 $font-second: 'Kaushan Script', cursive
+$font-roboto: 'Roboto', sans-serif
 $font-size: 2rem
-$margin-large: 4rem
+$margin-large: 5rem
 $margin-top-h2: 1rem
 $line-decoration: 2px solid #f38181
-$margin-between-line: 2rem
-$test-border: 1px solid black
-$margin-top: 5rem
+$margin-between-line: 3rem
+$test-border: 1px solid green
+$test-border2: 1px solid blue
 
 
-@mixin divBox 
-    display: inline-block
-    width: 33.1%
-    border: $test-border
+// @mixin divBox 
+//     display: inline-block
+//     width: 33.1%
+//     border: $test-border
 
+    // @mixin pageHeader
+    //     h1
+    //         font-family: $font-second
+    //         font-size: $font-size
+
+    //     h2:
+    //         font-family: $font-stack
+    //         font-size: $font-size
+    //         font-weight: bold
+    //         margin-top: $margin-top-h2
+
+    //     .line:
+    //         margin: 0 auto
+    //         border-top: $line-decoration
+    //         width: 5%
+    //         margin-top: $margin-between-line
+    //         margin-bottom: $margin-between-line
     
+
+//  ******************* HOME PAGE *******************      
 .container
     position: relative
     background-image: url(./images/eagle_background.jpg)
@@ -123,7 +143,6 @@ $margin-top: 5rem
         padding: 0.5rem
         color: white
         
-
         a
             text-decoration: none
             color: white
@@ -133,17 +152,20 @@ $margin-top: 5rem
         border-top: 1px solid white
         padding: 1rem 6rem 1rem 0
 
+//  ******************* SECOND PAGE *******************
+
 .secondPage
     position: relative
     width: 100%
-    margin-top: $margin-top
+    
 
     .sectionOne
         text-align: center
-
+        
         h1
             font-family: $font-second
             font-size: $font-size
+            margin-top: $margin-large
 
         h2
             font-family: $font-stack
@@ -164,6 +186,7 @@ $margin-top: 5rem
             margin: 0 auto
             color: #999999
             margin-bottom: $margin-large
+            font-family: $font-roboto
 
     .images
         text-align: center
@@ -172,8 +195,7 @@ $margin-top: 5rem
         img
             margin: 0.5rem
 
-    
-    
+// ******************* STATS PAGE *******************    
 .numbers
     margin: 0 auto
     text-align: center
@@ -202,17 +224,17 @@ $margin-top: 5rem
         text-align: center
         height: 3rem
 
-.thirdPage
-    position: relative
+//  ******************* THIRD PAGE *******************  
+section
     width: 100%
-    margin-top: $margin-large
-
-    .sectionOne
+    
+    .sectionOne 
         text-align: center
-
+        
         h1
             font-family: $font-second
             font-size: $font-size
+            margin-top: $margin-large
 
         h2
             font-family: $font-stack
@@ -227,23 +249,176 @@ $margin-top: 5rem
             margin-top: $margin-between-line
             margin-bottom: $margin-between-line
 
-.boxContainer 
+.sectionTwo
     margin: 0 auto
     width: 63%
-    border: $test-border
-    font-size 0
-
-    img
-        width: 2rem
-        height: 2rem
-        border: $test-border
-
+    
     .boxTop
-        @include divBox
+        position: relative
+        display: inline-block
+        width: 32%
+        height: 8rem
+        border-spacing: 0
+
+        img
+            margin-top:
+            width: 2rem
+            height: 2rem
+        .h1
+            position: absolute
+            width: 80%
+            top: 0
+            left: 20%
+
+            h1
+                font-family: $font-stack
+                font-weight: bold
+                margin-bottom: 1rem
+            p
+                font-family: $font-roboto
+                color: #999999
+
+
+    .lineThirdPage
+        border-top: 1px solid  #999999
+        width: 100%
+        margin-bottom: 3rem
+
+    .boxBottom
+        position: relative
+        display: inline-block
+        width: 32%
+        height: 8rem
+        border-spacing: 0
+
+        img
+            margin-top:
+            width: 2rem
+            height: 2rem
+
+        .h1
+            position: absolute
+            width: 80%
+            top: 0
+            left: 20%
+
+            h1
+                font-family: $font-stack
+                font-weight: bold
+                margin-bottom: 1rem
+            p
+                font-family: $font-roboto
+                color: #999999
+
+/*  ******************* FOUR PAGE ******************* */
+
+.fourPage
+   background-image: url(./images/background.jpg)
+   width: 100%
+   height: 100vh
+   margin 0 auto
+   position: relative
+
+.phone
+    position: absolute
+    top 0
+    bottom: 0
+    right: 0
+    left: 57%
+
+.tablet
+    text-align: center
+    padding-top: 8px
+
+.sectionHeader
+    text-align: center
+
+    h1
+        font-family: $font-second
+        font-size: $font-size
+        padding-top: $margin-large
         
 
-    .boxBottom 
-        @include divBox
+    h2
+        font-family: $font-stack
+        font-size: $font-size
+        font-weight: bold
+        margin-top: $margin-top-h2
+
+    .line
+        margin: 0 auto
+        border-top: $line-decoration
+        width: 5%
+        margin-top: $margin-between-line
+        margin-bottom: $margin-between-line
+
+/*  ******************* FIVE PAGE ******************* */
+
+.fivePage
+    width: 100%
+
+.sectionFive
+    text-align: center
+    // border: $test-border
+
+    h1
+        font-family: $font-second
+        font-size: $font-size
+        padding-top: $margin-large
+        
+
+    h2
+        font-family: $font-stack
+        font-size: $font-size
+        font-weight: bold
+        margin-top: $margin-top-h2
+
+    .line
+        margin: 0 auto
+        border-top: $line-decoration
+        width: 5%
+        margin-top: $margin-between-line
+        margin-bottom: $margin-between-line
+
+    p
+        width: 55%
+        margin: 0 auto
+        color: #999999
+        margin-bottom: $margin-large
+        font-family: $font-roboto
+
+
+
+.boxes
+    width: 80%
+    height: 39vh
+    position: relative
+    border: 1px solid red
+    // margin: 0 auto
+
+    .boxLeft 
+        position: absolute
+        height: 100%
+        top: 0
+        right: 50%
+        bottom: 0
+        left: 0
+        border: $test-border
+
+    .boxRight 
+        position: absolute
+        height: 80px
+        top: 0
+        right: 0
+        bottom: 0
+        left: 50%
+        border: $test-border2
+
+
+
+    
+
+
         
 
 
