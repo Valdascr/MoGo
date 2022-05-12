@@ -322,7 +322,7 @@ section .sectionOne .line {
   color: #999999;
 }
 
-/*  ******************* FOUR PAGE ******************* */
+/*  ******************* PAGE FOUR ******************* */
 .fourPage {
   background-image: url(./images/background.jpg);
   width: 100%;
@@ -367,7 +367,7 @@ section .sectionOne .line {
   margin-bottom: 3rem;
 }
 
-/*  ******************* FIVE PAGE ******************* */
+/*  *******************  PAGE FIVE ******************* */
 .fivePage {
   width: 100%;
 }
@@ -409,7 +409,9 @@ section .sectionOne .line {
   width: 80%;
   height: 39vh;
   position: relative;
-  border: 1px solid red;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
 .boxes .boxLeft {
@@ -419,16 +421,93 @@ section .sectionOne .line {
   right: 50%;
   bottom: 0;
   left: 0;
-  border: 1px solid green;
+  text-align: right;
 }
 
 .boxes .boxRight {
   position: absolute;
-  height: 80px;
+  height: 100%;
   top: 0;
   right: 0;
   bottom: 0;
   left: 50%;
-  border: 1px solid blue;
+  margin-left: 2rem;
+}
+
+.boxes .label {
+  border: 1px solid #999999;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.boxes .label img {
+  padding: 10px;
+}
+
+.boxes .label span {
+  vertical-align: middle;
+  font-variant: small-caps;
+}
+
+.boxes .label span::after {
+  vertical-align: middle;
+  float: right;
+  right: 10%;
+  content: "^";
+  padding: 20px;
+}
+
+.boxes .label p {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  border-top: 1px solid #999999;
+  padding: 10px;
+}
+
+/*  *******************  CAROUSEL/SLIDESHOW SECTION ******************* */
+.carousel {
+  background-color: #f8f8f8;
+}
+
+/*  *******************  PAGE SIX ******************* */
+.pageSix {
+  width: 100%;
+}
+
+.sectionSix {
+  text-align: center;
+}
+
+.sectionSix h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
+  padding-top: 5rem;
+}
+
+.sectionSix h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.sectionSix .line {
+  margin: 0 auto;
+  border-top: 2px solid #f38181;
+  width: 5%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.sectionSix p {
+  width: 55%;
+  margin: 0 auto;
+  color: #999999;
+  margin-bottom: 5rem;
+  font-family: "Roboto", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

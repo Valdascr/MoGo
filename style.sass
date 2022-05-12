@@ -152,7 +152,7 @@ $test-border2: 1px solid blue
         border-top: 1px solid white
         padding: 1rem 6rem 1rem 0
 
-//  ******************* SECOND PAGE *******************
+//  *******************  PAGE TWO *******************
 
 .secondPage
     position: relative
@@ -224,7 +224,7 @@ $test-border2: 1px solid blue
         text-align: center
         height: 3rem
 
-//  ******************* THIRD PAGE *******************  
+//  ******************* PAGE THREE *******************  
 section
     width: 100%
     
@@ -310,7 +310,7 @@ section
                 font-family: $font-roboto
                 color: #999999
 
-/*  ******************* FOUR PAGE ******************* */
+/*  ******************* PAGE FOUR ******************* */
 
 .fourPage
    background-image: url(./images/background.jpg)
@@ -352,7 +352,7 @@ section
         margin-top: $margin-between-line
         margin-bottom: $margin-between-line
 
-/*  ******************* FIVE PAGE ******************* */
+/*  *******************  PAGE FIVE ******************* */
 
 .fivePage
     width: 100%
@@ -393,8 +393,11 @@ section
     width: 80%
     height: 39vh
     position: relative
-    border: 1px solid red
-    // margin: 0 auto
+    // border: 1px solid red
+    margin: 0 auto
+    text-align: center
+    margin-bottom: $margin-large
+
 
     .boxLeft 
         position: absolute
@@ -403,16 +406,97 @@ section
         right: 50%
         bottom: 0
         left: 0
-        border: $test-border
+        // border: $test-border
+        text-align: right
 
     .boxRight 
         position: absolute
-        height: 80px
+        height: 100%
         top: 0
         right: 0
         bottom: 0
         left: 50%
-        border: $test-border2
+        margin-left: 2rem
+        // border: $test-border2
+
+    .label
+        border: 1px solid #999999
+        text-align: left
+        // vertical-align: middle
+        width: 100%
+        margin-bottom: 1rem
+        display: inline-block
+        font-family: $font-stack
+
+        img 
+            padding: 10px
+
+        
+        span
+            vertical-align: middle
+            font-variant : small-caps
+    
+            &::after
+                vertical-align: middle
+                float: right
+                right: 10%
+                content: "^"
+                padding: 20px
+
+        p 
+            margin-top: 20px
+            font-family: $font-roboto
+            color: #999999
+            border-top: 1px solid #999999
+            padding: 10px
+
+/*  *******************  CAROUSEL/SLIDESHOW SECTION ******************* */
+
+.carousel
+    background-color: #f8f8f8
+
+
+/*  *******************  PAGE SIX ******************* */
+
+.pageSix
+    width: 100%
+
+.sectionSix
+    text-align: center
+    // border: $test-border
+
+    h1
+        font-family: $font-second
+        font-size: $font-size
+        padding-top: $margin-large
+        
+
+    h2
+        font-family: $font-stack
+        font-size: $font-size
+        font-weight: bold
+        margin-top: $margin-top-h2
+
+    .line
+        margin: 0 auto
+        border-top: $line-decoration
+        width: 5%
+        margin-top: $margin-between-line
+        margin-bottom: $margin-between-line
+
+    p
+        width: 55%
+        margin: 0 auto
+        color: #999999
+        margin-bottom: $margin-large
+        font-family: $font-roboto
+
+
+        
+
+
+
+  
 
 
 
