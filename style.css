@@ -403,6 +403,7 @@ section .sectionOne .line {
   color: #999999;
   margin-bottom: 5rem;
   font-family: "Roboto", sans-serif;
+  line-height: 1.5;
 }
 
 .boxes {
@@ -439,12 +440,13 @@ section .sectionOne .line {
   text-align: left;
   width: 100%;
   margin-bottom: 1rem;
-  display: inline-block;
   font-family: "Montserrat", sans-serif;
 }
 
 .boxes .label img {
   padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .boxes .label span {
@@ -453,7 +455,6 @@ section .sectionOne .line {
 }
 
 .boxes .label span::after {
-  vertical-align: middle;
   float: right;
   right: 10%;
   content: "^";
@@ -466,36 +467,98 @@ section .sectionOne .line {
   color: #999999;
   border-top: 1px solid #999999;
   padding: 10px;
+  line-height: 1.5;
 }
 
 /*  *******************  CAROUSEL/SLIDESHOW SECTION ******************* */
 .carousel {
   background-color: #f8f8f8;
+  width: 100%;
+}
+
+.carousel .carouselContainer {
+  width: 62.5%;
+  margin: 0 auto;
+}
+
+.carouselContainer .arrowLeft {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.carouselContainer .speechIcon {
+  display: inline-block;
+  border: 2px solid #95e1d3;
+  vertical-align: middle;
+  padding: 1rem;
+  margin: 3rem;
+}
+
+.carouselContainer .text {
+  display: inline-block;
+  width: 73%;
+  vertical-align: middle;
+  padding: 0 1rem 0;
+}
+
+.carouselContainer .text p {
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-size: 24px;
+}
+
+.carouselContainer .text .line {
+  border-bottom: 2px solid #f38181;
+  width: 5%;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.carouselContainer .text .name {
+  display: inline-block;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+}
+
+.carouselContainer .arrowRight {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
 }
 
 /*  *******************  PAGE SIX ******************* */
 .pageSix {
   width: 100%;
+  margin-bottom: 5rem;
 }
 
-.sectionSix {
+.pageSix .sectionOfPhoto {
+  width: 65%;
+  margin: 0 auto;
   text-align: center;
 }
 
-.sectionSix h1 {
+.sectionOne {
+  text-align: center;
+}
+
+.sectionOne h1 {
   font-family: "Kaushan Script", cursive;
   font-size: 2rem;
   padding-top: 5rem;
 }
 
-.sectionSix h2 {
+.sectionOne h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   margin-top: 1rem;
+  font-variant: small-caps;
 }
 
-.sectionSix .line {
+.sectionOne .line {
   margin: 0 auto;
   border-top: 2px solid #f38181;
   width: 5%;
@@ -503,11 +566,155 @@ section .sectionOne .line {
   margin-bottom: 3rem;
 }
 
-.sectionSix p {
+.sectionOne p {
   width: 55%;
   margin: 0 auto;
   color: #999999;
   margin-bottom: 5rem;
   font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+.sectionOfPhoto .photoOne {
+  display: inline-block;
+  margin-right: 1.7rem;
+  vertical-align: top;
+}
+
+.sectionOfPhoto .photoTwo {
+  display: inline-block;
+}
+
+.sectionOfPhoto .photoThree {
+  display: inline-block;
+  margin-left: 1.7rem;
+}
+
+.sectionOfPhoto h1 {
+  font-family: "Montserrat", sans-serif;
+  font-variant: small-caps;
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+
+.sectionOfPhoto h2 {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.logosSection {
+  width: 100%;
+  background-color: #f8f8f8;
+  margin-bottom: 5rem;
+}
+
+.logosSection .logos {
+  width: 63%;
+  margin: 0 auto;
+}
+
+.pageSeven {
+  width: 100%;
+}
+
+.sectionOne {
+  text-align: center;
+}
+
+.sectionOne h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
+  padding-top: 5rem;
+}
+
+.sectionOne h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-variant: small-caps;
+}
+
+.sectionOne .line {
+  margin: 0 auto;
+  border-top: 2px solid #f38181;
+  width: 5%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.sectionOne p {
+  width: 55%;
+  margin: 0 auto;
+  color: #999999;
+  margin-bottom: 5rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+.sectionPhotos {
+  width: 100%;
+  border: 1px solid green;
+  text-align: left;
+}
+
+.sectionPhotos .blockOne {
+  display: inline-block;
+  margin-right: -4px;
+  border-collapse: collapse;
+}
+
+.sectionPhotos .layer30 {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: -4px;
+}
+
+.sectionPhotos .layer30 .img30 {
+  margin-right: -4px;
+}
+
+.sectionPhotos .layer31 {
+  vertical-align: top;
+}
+
+.sectionPhotos .layer31 .img31 {
+  margin-right: -4px;
+}
+
+.sectionPhotos .layer32 {
+  display: inline-block;
+}
+
+.sectionPhotos .layer34 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sectionPhotos .blockTwo {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px;
+}
+
+.sectionPhotos .layer35 {
+  display: inline-block;
+}
+
+.sectionPhotos .layer35 img {
+  width: 460px;
+  height: 391px;
+  margin-bottom: -4px;
+}
+
+.sectionPhotos .layer36 {
+  display: block;
+}
+
+.sectionPhotos .layer36 img {
+  width: 460px;
+  height: 391px;
 }
 /*# sourceMappingURL=style.css.map */
