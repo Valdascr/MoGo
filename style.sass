@@ -49,6 +49,9 @@ $margin-between-line: 3rem
 $test-border: 1px solid green
 $test-border2: 1px solid blue
 $line-height: 1.5
+$font-size-text: 1rem
+$text-color-grey: #999999
+$margin-bottom-comments: 10px
 
 
 // @mixin divBox 
@@ -61,7 +64,7 @@ $line-height: 1.5
     //         font-family: $font-second
     //         font-size: $font-size
 
-    //     h2:
+    //     h2
     //         font-family: $font-stack
     //         font-size: $font-size
     //         font-weight: bold
@@ -592,12 +595,7 @@ section
 
 .pageSeven
     width: 100%
-    // margin-bottom: $margin-large
-    
-    // .sectionOfPhoto
-    //     width: 65%
-    //     margin: 0 auto
-    //     text-align: center
+
 
 .sectionOne
     text-align: center
@@ -633,28 +631,27 @@ section
 
 .sectionPhotos
     width: 100%
-    border: $test-border
     text-align: left
+    font-size: 0
 
     .blockOne
         display: inline-block
-        margin-right: -4px
+        // margin-right: -4px
         border-collapse: collapse
-        // border: $test-border
 
     .layer30
         display: inline-block
         vertical-align: top
-        margin-bottom: -4px
+        // margin-bottom: -4px
 
         .img30
-            margin-right: -4px
+            // margin-right: -4px
 
     .layer31
         vertical-align: top
 
         .img31
-            margin-right: -4px
+            // margin-right: -4px
 
     .layer32
         display: inline-block 
@@ -666,29 +663,276 @@ section
     .blockTwo
         display: inline-block
         vertical-align: top
-        margin-left: -4px
+        // margin-left: -4px
 
     .layer35
         display: inline-block
-        // vertical-align: top
         
         img
             width: 460px
             height: 391px
-            margin-bottom: -4px
+            // margin-bottom: -4px
 
     .layer36
         display: block
-        // vertical-align: top
         img
             width: 460px
             height: 391px
 
 
+// ******************* CAROUSEL/SLIDESHOW SECTION TWO *******************
 
 
+.carousel
+    background-color: #f8f8f8
+    width: 100%
+    margin-top: $margin-large
 
+    .carouselContainer
+        width: 62.5%
+        margin: 0 auto
+
+
+.carouselContainer
+
+    .arrowLeft
+        display: inline-block
+        vertical-align: middle  
+
+    .layer50
+        display: inline-block
+        vertical-align: middle
+        margin: 0 1rem 0 1rem
+
+    .text
+        display: inline-block
+        width: 73%
+        vertical-align: middle
+        padding: 0 1rem 0
+
+
+        p
+            color: #999999
+            font-family: $font-roboto
+            margin-bottom: 0.5rem
+            line-height: 1.2
+            font-size: 24px
+
+        .line
+            border-bottom: $line-decoration
+            width: 5% 
+            display: inline-block
+            margin-bottom: 0.5rem
+
+        .name
+            display: inline-block
+            font-family: $font-second
+            font-size: 24px
+     
+    .arrowRight
+        display: inline-block
+        vertical-align: middle
+        margin-left: 0.5rem
+
+// ******************* PAGE EIGHT ******************* 
+
+.pageEight
+    width: 100%
+    background-image: url(./images/backgroundPageEight.jpg)
+    padding-bottom: $margin-large
+    
+    .sectionOne 
+        text-align: center
         
+        h1
+            font-family: $font-second
+            font-size: $font-size
+            margin-top: $margin-large
+
+        h2
+            font-family: $font-stack
+            font-size: $font-size
+            font-weight: bold
+            margin-top: $margin-top-h2
+
+        .line
+            margin: 0 auto
+            border-top: $line-decoration
+            width: 5%
+            margin-top: $margin-between-line
+            margin-bottom: $margin-between-line
+
+.sectionTwo
+    // border: 1px solid black
+    font-size: 0
+
+    // .commentTop
+        // border: $test-border2
+
+    .commentOne
+        display: inline-block
+        width: 50%
+
+        .img
+            display: inline-block
+            width: 20%
+            // border: $test-border2
+
+        .commentText
+            display: inline-block
+            // border: 1px solid red
+            width: 80% 
+            vertical-align: top
+
+            h1
+                font-size: $font-size-text
+                font-family: $font-stack
+                font-variant: small-caps
+                margin-bottom: $margin-bottom-comments
+
+                
+            h2
+                font-size: $font-size-text
+                font-family: $font-roboto
+                color: $text-color-grey
+                margin-bottom: $margin-bottom-comments
+
+            .line
+                border-top: $line-decoration
+                width: 5%
+                margin-bottom: $margin-bottom-comments
+
+
+            p
+                font-size: $font-size-text
+                font-family: $font-roboto
+                color: $text-color-grey
+                line-height: $line-height
+
+
+    .commentTwo
+        display: inline-block
+        width: 50%
+
+        .img
+            display: inline-block
+            width: 20%
+            // border: $test-border2
+
+        .commentText
+            display: inline-block
+            // border: 1px solid red
+            width: 80% 
+            vertical-align: top
+
+            h1
+                font-size: $font-size-text
+                font-family: $font-stack
+                font-variant: small-caps
+                margin-bottom: $margin-bottom-comments
+
+                
+            h2
+                font-size: $font-size-text
+                font-family: $font-roboto
+                color: $text-color-grey
+                margin-bottom: $margin-bottom-comments
+
+            .line
+                border-top: $line-decoration
+                width: 5%
+                margin-bottom: $margin-bottom-comments
+
+
+            p
+                font-size: $font-size-text
+                font-family: $font-roboto
+                color: $text-color-grey
+                line-height: $line-height
+
+
+    .commentThree
+        display: inline-block
+        width: 50%
+
+        .img
+            display: inline-block
+            width: 20%
+            // border: $test-border2
+
+        .commentText
+            display: inline-block
+            // border: 1px solid red
+            width: 80% 
+            vertical-align: top
+
+            h1
+                font-size: $font-size-text
+                font-family: $font-stack
+                font-variant: small-caps
+                margin-bottom: $margin-bottom-comments
+
+                
+            h2
+                font-size: $font-size-text
+                font-family: $font-roboto
+                color: $text-color-grey
+                margin-bottom: $margin-bottom-comments
+
+            .line
+                border-top: $line-decoration
+                width: 5%
+                margin-bottom: $margin-bottom-comments
+
+
+            p
+                font-size: $font-size-text
+                font-family: $font-roboto
+                color: $text-color-grey
+                line-height: $line-height
+
+
+    .commentFour
+        display: inline-block
+        width: 50%
+
+        .img
+            display: inline-block
+            width: 20%
+            // border: $test-border2
+
+        .commentText
+            display: inline-block
+            // border: 1px solid red
+            width: 80% 
+            vertical-align: top
+
+            h1
+                font-size: $font-size-text
+                font-family: $font-stack
+                font-variant: small-caps
+                margin-bottom: $margin-bottom-comments
+
+                
+            h2
+                font-size: $font-size-text
+                font-family: $font-roboto
+                color: $text-color-grey
+                margin-bottom: $margin-bottom-comments
+
+            .line
+                border-top: $line-decoration
+                width: 5%
+                margin-bottom: $margin-bottom-comments
+
+
+            p
+                font-size: $font-size-text
+                font-family: $font-roboto
+                color: $text-color-grey
+                line-height: $line-height
+
+
 
 
 
