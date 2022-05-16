@@ -52,6 +52,7 @@ $line-height: 1.5
 $font-size-text: 1rem
 $text-color-grey: #999999
 $margin-bottom-comments: 10px
+$margin-small: 1rem
 
 
 // @mixin divBox 
@@ -739,7 +740,7 @@ section
 .pageEight
     width: 100%
     background-image: url(./images/backgroundPageEight.jpg)
-    padding-bottom: $margin-large
+    padding-bottom: 3.5rem
     
     .sectionOne 
         text-align: center
@@ -760,14 +761,12 @@ section
             border-top: $line-decoration
             width: 5%
             margin-top: $margin-between-line
-            margin-bottom: $margin-between-line
+            margin-bottom: $margin-large
 
-.sectionTwo
-    // border: 1px solid black
+.sectionTwoOfPageEight
     font-size: 0
-
-    // .commentTop
-        // border: $test-border2
+    width: 63%
+    margin: 0 auto
 
     .commentOne
         display: inline-block
@@ -775,14 +774,13 @@ section
 
         .img
             display: inline-block
-            width: 20%
-            // border: $test-border2
 
         .commentText
             display: inline-block
-            // border: 1px solid red
-            width: 80% 
+            width: 75%
             vertical-align: top
+            margin-left: 0.75rem
+            margin-bottom: $margin-large  
 
             h1
                 font-size: $font-size-text
@@ -796,6 +794,7 @@ section
                 font-family: $font-roboto
                 color: $text-color-grey
                 margin-bottom: $margin-bottom-comments
+                font-style: italic
 
             .line
                 border-top: $line-decoration
@@ -816,14 +815,13 @@ section
 
         .img
             display: inline-block
-            width: 20%
-            // border: $test-border2
 
         .commentText
             display: inline-block
-            // border: 1px solid red
-            width: 80% 
+            width: 75% 
             vertical-align: top
+            margin-left: 0.75rem
+            margin-bottom: $margin-large
 
             h1
                 font-size: $font-size-text
@@ -837,6 +835,7 @@ section
                 font-family: $font-roboto
                 color: $text-color-grey
                 margin-bottom: $margin-bottom-comments
+                font-style: italic
 
             .line
                 border-top: $line-decoration
@@ -857,14 +856,13 @@ section
 
         .img
             display: inline-block
-            width: 20%
-            // border: $test-border2
 
         .commentText
             display: inline-block
-            // border: 1px solid red
-            width: 80% 
+            width: 75%
             vertical-align: top
+            margin-left: 0.75rem
+            margin-bottom: $margin-large 
 
             h1
                 font-size: $font-size-text
@@ -878,6 +876,7 @@ section
                 font-family: $font-roboto
                 color: $text-color-grey
                 margin-bottom: $margin-bottom-comments
+                font-style: italic
 
             .line
                 border-top: $line-decoration
@@ -898,14 +897,13 @@ section
 
         .img
             display: inline-block
-            width: 20%
-            // border: $test-border2
 
         .commentText
             display: inline-block
-            // border: 1px solid red
-            width: 80% 
+            width: 75%
             vertical-align: top
+            margin-left: 0.75rem
+            margin-bottom: $margin-large 
 
             h1
                 font-size: $font-size-text
@@ -919,6 +917,7 @@ section
                 font-family: $font-roboto
                 color: $text-color-grey
                 margin-bottom: $margin-bottom-comments
+                font-style: italic
 
             .line
                 border-top: $line-decoration
@@ -931,6 +930,122 @@ section
                 font-family: $font-roboto
                 color: $text-color-grey
                 line-height: $line-height
+
+// ******************* PAGE NINE *******************
+
+.pageNine
+    width: 100%
+
+    .sectionOne 
+        text-align: center
+        
+        h1
+            font-family: $font-second
+            font-size: $font-size
+            margin-top: $margin-large
+
+        h2
+            font-family: $font-stack
+            font-size: $font-size
+            font-weight: bold
+            margin-top: $margin-top-h2
+
+        .line
+            margin: 0 auto
+            border-top: $line-decoration
+            width: 5%
+            margin-top: $margin-between-line
+            margin-bottom: $margin-large
+
+.blogSection
+    text-align: center
+    margin: 0 auto
+    width: 70%
+    margin-bottom: $margin-large
+    // border: $test-border2
+
+    .blogOne
+        display: inline-block
+        width: 29%
+        margin-right: $margin-small
+        text-align: left
+
+        h1
+            margin-top: $margin-small
+            font-weight: bolder
+            font-family: $font-stack
+
+        p
+            margin-top: $margin-small
+            font-family: $font-roboto
+            color: $text-color-grey
+            line-height: $line-height
+            padding-bottom: $margin-small
+            border-bottom: $test-border
+            border-color: $text-color-grey
+
+        .blogBottom
+            margin-top: $margin-small
+
+            span
+                margin-right: $margin-small
+
+        
+    .blogTwo
+        display: inline-block
+        width: 29%
+        vertical-align: top
+        text-align: left
+
+        h1
+            margin-top: $margin-small
+            font-weight: bolder
+            font-family: $font-stack
+
+        p
+            margin-top: $margin-small
+            font-family: $font-roboto
+            color: $text-color-grey
+            line-height: $line-height
+            padding-bottom: $margin-small
+            border-bottom: $test-border
+            border-color: $text-color-grey
+
+        .blogBottom
+            margin-top: $margin-small
+
+            span
+                margin-right: $margin-small
+
+        
+
+    .blogThree
+        display: inline-block
+        width: 29%
+        vertical-align: top
+        margin-left: $margin-small
+        text-align: left
+
+        h1
+            margin-top: $margin-small
+            font-weight: bolder
+            font-family: $font-stack
+
+        p
+            margin-top: $margin-small
+            font-family: $font-roboto
+            color: $text-color-grey
+            line-height: $line-height
+            padding-bottom: $margin-small
+            border-bottom: $test-border
+            border-color: $text-color-grey
+
+        .blogBottom
+            margin-top: $margin-small
+
+            span
+                 margin-right: $margin-small
+                 
 
 
 
