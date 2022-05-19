@@ -293,6 +293,7 @@ section .sectionOne .line {
   width: 80%;
   top: 0;
   left: 20%;
+  padding-bottom: 3.5rem;
 }
 
 .sectionTwo .boxOne .boxTop .h1 h1 {
@@ -689,7 +690,6 @@ section .sectionOne .line {
 
 .sectionPhotos {
   width: 100%;
-  text-align: left;
   font-size: 0;
 }
 
@@ -736,6 +736,7 @@ section .sectionOne .line {
   height: 391px;
 }
 
+/* ******************* CAROUSEL/SLIDESHOW SECTION TWO ******************* */
 .carousel {
   background-color: #f8f8f8;
   width: 100%;
@@ -792,6 +793,7 @@ section .sectionOne .line {
   margin-left: 0.5rem;
 }
 
+/* ******************* PAGE EIGHT ******************* */
 .pageEight {
   width: 100%;
   background-image: url(./images/backgroundPageEight.jpg);
@@ -1009,6 +1011,7 @@ section .sectionOne .line {
   line-height: 1.5;
 }
 
+/* ******************* PAGE NINE ******************* */
 .pageNine {
   width: 100%;
   margin-bottom: 5rem;
@@ -1076,6 +1079,7 @@ section .sectionOne .line {
   margin-right: 1rem;
 }
 
+/* ******************* MAP SECTION ******************* */
 .map {
   background-image: url(./images/map.jpg);
   width: 100%;
@@ -1115,7 +1119,6 @@ footer .footerSectionOne {
   display: inline-block;
   width: 30%;
   vertical-align: top;
-  margin-right: 3rem;
 }
 
 footer .footerSectionOne h1 {
@@ -1153,6 +1156,7 @@ footer .footerSectionOne .followUs {
 
 footer .footerSectionOne .followUs h3 {
   display: inline-block;
+  margin-right: 1rem;
   font-family: "Montserrat", sans-serif;
   color: #999999;
 }
@@ -1196,8 +1200,6 @@ footer .footerSectionOne .input button {
 
 footer .footerSectionTwo {
   display: inline-block;
-  width: 30%;
-  margin-right: 3rem;
 }
 
 footer .footerSectionTwo h1 {
@@ -1212,7 +1214,7 @@ footer .footerSectionTwo .footerBlog {
 
 footer .footerSectionTwo .footerBlog .blogText {
   display: inline-block;
-  width: 65%;
+  width: 55%;
   vertical-align: top;
   padding-top: 1rem;
 }
@@ -1233,7 +1235,6 @@ footer .footerSectionTwo .footerBlog .blogText span {
 footer .footerSectionThree {
   display: inline-block;
   vertical-align: top;
-  width: 30%;
 }
 
 footer .footerSectionThree h1 {
@@ -1288,8 +1289,9 @@ footer .footerSectionThree p {
     height: 75%;
     width: 75%;
   }
-  .boxNumber {
-    display: block;
+  .photoOne img {
+    width: 285px;
+    height: 350px;
   }
 }
 /*# sourceMappingURL=style.css.map */
